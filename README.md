@@ -18,41 +18,40 @@ Nebula Shield is a localized application security testing environment designed t
 ## Step by Step Lab Guide
 
 ### Phase 1: Deploy the Vulnerable Target Application (Ubuntu)
+1. Open a terminal on your target system and navigate into your core workspace: cd ~/my_configs/nevula_shield_lab
 
-Open a terminal on your target system and navigate into your core workspace: cd ~/my_configs/nevula_shield_lab
-
-Install the necessary lightweight web framework components to handle backend traffic routing:
+2. Install the necessary lightweight web framework components to handle backend traffic routing:
 
 Bash
 pip3 install flask requests --break-system-packages
 
-Launch your defensive application layer. This application monitors incoming payloads, acting as a structural firewall guarding the simulated model endpoints:
+3. Launch your defensive application layer. This application monitors incoming payloads, acting as a structural firewall guarding the simulated model endpoints:
 
    '''bash
 python3 defensive_app.py
 
-Verify the system log outputs indicate the server is listening successfully on port 5000.
+4. Verify the system log outputs indicate the server is listening successfully on port 5000.
 
 ### Phase 2: Configure the Assessment Environment (Kali Linux)
-Open your terminal console on Kali and switch to your security repository folder:
+1. Open your terminal console on Kali and switch to your security repository folder:
 
    '''bash
 cd ~/Nebula-Shield
 
-Initialize your isolated security tool suite virtual environment where the testing framework modules are stored:
+2. Initialize your isolated security tool suite virtual environment where the testing framework modules are stored:
 
    '''bash
 source ~/venvs/garak/bin/activate
 
-Configure your automated vulnerability testing suite by verifying that your REST endpoints, custom payloads, and evaluation criteria maps point directly to your active Ubuntu server IP address inside your garak_configs.yaml or garak_rest.json files.
+3. Configure your automated vulnerability testing suite by verifying that your REST endpoints, custom payloads, and evaluation criteria maps point directly to your active Ubuntu server IP address inside your garak_configs.yaml or garak_rest.json files.
 
 ### Phase 3: Launch automated Scanning Sweeps
-Execute your custom scanning orchestration script. This script automatically targets your vulnerable application using adversarial probes to evaluate your guardrail thresholds:
+1. Execute your custom scanning orchestration script. This script automatically targets your vulnerable application using adversarial probes to evaluate your guardrail thresholds:
 
    '''bash
 PYTHONPATH=/home/kali/venvs/garak python3 run_scan.py
 
-Review the resulting vulnerability metrics. The orchestration script compiles all telemetry data into an interactive visual dashboard:
+2. Review the resulting vulnerability metrics. The orchestration script compiles all telemetry data into an interactive visual dashboard:
 
    '''bash
 xdg-open nebula_shield_report.html
