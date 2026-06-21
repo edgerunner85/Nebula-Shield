@@ -1,4 +1,5 @@
 # Nebula Shield: Automated Vulnerability Assessment for Local LLMs
+<img width="732" height="891" alt="Nebula Shield 2" src="https://github.com/user-attachments/assets/8bf66347-c2c8-4289-b104-cab795f0937a" />
 
 This repository contains the architecture, automated configuration files, and evaluation reports for the **Nebula Shield** security assessment framework. The project evaluates prompt injection vulnerabilities and data validation vectors within localized Large Language Model implementations.
 
