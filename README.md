@@ -21,7 +21,7 @@ Nebula Shield is a localized application security testing environment designed t
 
 1. Open a terminal on your target system and navigate into your core workspace:
    ```bash
-cd ~/gem5/my_configs/nebula_shield_lab
+cd ~/my_configs/nevula_shield_lab
 
 Install the necessary lightweight web framework components to handle backend traffic routing:
 
