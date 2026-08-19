@@ -22,8 +22,7 @@ Nebula Shield is a localized application security testing environment designed t
 
 2. Install the necessary lightweight web framework components to handle backend traffic routing:
 
-Bash
-pip3 install flask requests --break-system-packages
+'''bash pip3 install flask requests --break-system-packages
 
 3. Launch your defensive application layer. This application monitors incoming payloads, acting as a structural firewall guarding the simulated model endpoints:
 
